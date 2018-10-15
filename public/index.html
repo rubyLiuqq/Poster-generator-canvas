@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Poster-Generator</title>
+  <style>
+  p {
+    margin: 10px 0;
+  }
+  input {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 20px;
+    caret-color: steelblue;
+    outline: none;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, gray, #eee);
+  }
+
+  button:focus {
+    outline: none;
+  }
+  button:active {
+    box-shadow: inset 0 0 30px gray;
+  }
+</style>
+</head>
+<body>
+  <!-- 用户可以增加的文案 -->
+  <div class="user">
+    <p>用户头像：<input id="userAvatar" value="http://wq.360buyimg.com/img/pingou-head/65.jpg"/></p>
+    <p>用户名：<input id="userName" value="测试盛大的撒"/></p>
+  </div>
+  <div class="store">
+    <p>商品图片：<input id="storeImg" value="http://img13.360buyimg.com/evalpic/s200x200_jfs/t18925/271/1276748011/687433/b05e3d5e/5ac47ca2Nefdcfa1c.jpg.dpg"/></p>
+    <p>商品标题：<input id="storeName" value="是的撒打算的啊"/></p>
+    <p>商品价格：<input id="storePrice" value="21"/></p>
+    <p>几人拼：<input id="peopleNum" value="123"/></p>
+    <p>已经拼：<input id="peopleTotal" value="1"/></p>
+  </div>
+  <button id="button">点击分享并生成海报</button>
+  <div id="img"></div>
+</body>
+</html>
